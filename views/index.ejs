@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Cloud Connect</title>
+    <meta name="description" content="Google Cloud Speech Recognition with Node and Socket.io">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+
+</head>
+
+<body>
+    <div class='main-page'>
+        <div class="wrapper">
+            <h1><i class="icon-col fab fa-cloudsmith"></i> Cloud Connect <div class='rec' id="recordingStatus"></div>
+            </h1>
+            <audio></audio>
+
+            <div class='container'>
+                <div class='row'>
+                    <div class='col-lg-6'>
+                        <span class='disp-text'>Translate Speech From </span><select class='dd' id="m" onchange="sendInfo()">
+                            <option value="en">English</option>
+                            <option value="fr">French</option>
+                            <option value="ru">Russian</option>
+                            <option value="hi">Hindi</option>
+
+                        </select>
+                        <div class="result">
+                            <div id="ResultText">
+                                <span class="greyText">No Speech to Text yet</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='col-lg-6'>
+                        <span class='disp-text'>Translate Speech To </span><select class='dd' id="m1" onchange="sendTranslation()">
+                            <option value="fr">French</option>
+                            <option value="en">English</option>
+                            <option value="ru">Russian</option>
+                            <option value="hi">Hindi</option>
+
+                        </select>
+                        <div class="result">
+                            <div id="translation">
+                                <span class="greyText">No Translate data yet</span>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='btn-grp'>
+                <button class="btn btn-danger" id="startRecButton" type="button"> Start Recording</button>
+                <button class="btn btn-dark" id="stopRecButton" type="button"> Stop Recording</button>
+                <button class='btn btn-dark' onclick="textToAudio()">Speak</button>
+            </div>
+        </div>
+
+        <br>
+        <br>
+    </div>
+
+
+
+    <!-- Nlp -->
+    <script src="https://unpkg.com/compromise@11.14.3/builds/compromise.min.js"></script>
+
+    <script type="text/javascript"
+        src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+    <!-- Socket -->
+    <script src="assets/js/socket.io.js"></script>
+
+    <!-- Client -->
+    <script src="assets/js/client.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+        </script>
+</body>
+
+</html>

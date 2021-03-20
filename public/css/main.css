@@ -1,0 +1,290 @@
+body {
+  background-color: #111111;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  color: black;
+}
+
+a {
+  font-weight: bold;
+  text-decoration: none;
+  color: #2a2a2a;
+}
+
+a:visited {
+  font-weight: normal;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.btn {
+  margin: 2px;
+  margin-top: 10px;
+  border-radius: 30px;
+}
+
+audio {
+  width: 300px;
+  height: auto;
+  backgorund-color: red;
+}
+
+.speak-btn {
+  margin-left: auto;
+}
+
+.result {
+  overflow: auto;
+
+  height: 300px;
+  margin: 4% 0% 2%;
+  text-align: center;
+  padding: 30px 20px;
+  /* margin-left: 100px; */
+  border-radius: 24px;
+  background-color: #191919;
+}
+
+.main-page {
+  font-family: "montserrat";
+  margin: 5% 10%;
+}
+
+.wrapper {
+}
+
+.greyText {
+  opacity: 0.4;
+}
+
+@-webkit-keyframes redGlow {
+  from {
+    background-color: #bd240f;
+    -webkit-box-shadow: 0 0 9px #9c291a;
+  }
+  50% {
+    background-color: #bd240f;
+    -webkit-box-shadow: 0 0 18px #bdb5b4;
+  }
+  to {
+    background-color: #bd240f;
+    -webkit-box-shadow: 0 0 9px #bd240f;
+  }
+}
+#recordingStatus {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 20px;
+  visibility: hidden;
+  -webkit-animation-name: redGlow;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+}
+
+#ResultText {
+  color: aliceblue;
+}
+
+#translation {
+  color: aliceblue;
+}
+
+#ResultText span {
+  overflow-wrap: break-word;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+#sessionSpeechData {
+  width: 80vw;
+}
+
+#sessionSpeechData span {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+p {
+  color: azure;
+}
+
+.nl-Adjective {
+  background-color: darkblue;
+  padding: 3px;
+}
+
+.nl-Noun {
+  background-color: darkred;
+  padding: 3px;
+}
+
+.nl-Verb {
+  background-color: darkgoldenrod;
+  padding: 3px;
+}
+
+.hiddenForms {
+  opacity: 0.2;
+}
+
+h1 {
+  margin-right: 10px;
+  padding-bottom: 2%;
+  color: white;
+}
+
+@media only screen and (min-width: 1201px) {
+}
+
+@media only screen and (max-width: 1200px) {
+}
+
+@media only screen and (max-width: 992px) {
+}
+
+@media only screen and (max-width: 768px) {
+}
+
+@media only screen and (max-width: 480px) {
+}
+
+@media only screen and (max-width: 320px) {
+}
+
+@media print,
+  (-o-min-device-pixel-ratio: 5/4),
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 120dpi) {
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+@media print {
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
+select:not([multiple]) {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-position: right 50%;
+  background-repeat: no-repeat;
+  padding: 0.5em;
+}
+
+.dd {
+  border: 0px;
+  border-radius: 10px;
+  background-color: #191919;
+  color: white;
+  margin-left: 1%;
+}
+
+.btn-grp {
+  padding: 1%;
+}
+
+.disp-text {
+  color: white;
+}
+
+.icon-col {
+  color: rgb(230, 70, 70);
+  margin-right: 10px;
+}
+
+.rec {
+  margin-left: 10px;
+}
