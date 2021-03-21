@@ -3,4 +3,4 @@ The service lets you talk to the server endpoints using REST API through text or
 
 The live demo is avilable here-
 
-https://itchy-turkey-46.loca.lt/
+https://smart-vampirebat-40.loca.lt/
